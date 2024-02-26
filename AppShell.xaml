@@ -8,30 +8,34 @@
 
 
     <!-- More than one Flyout item with multiple tabs-->
-    <FlyoutItem FlyoutDisplayOptions="AsSingleItem" Route="tabs" Title="Tabs 1,2">
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Route="tabs" Title="Domestic">
+        <Tab Title="Domestic" Icon="icon2.png" Route="Domestic">
+            <ShellContent
+         Title="Cats" Icon="cat.png"
+         ContentTemplate="{DataTemplate views:Cats}"
+         Route="Tab2" />
+            <ShellContent
+         Title="Dogs" Icon="dog.png"
+         ContentTemplate="{DataTemplate views:Dogs}"
+         Route="Tab3" />
+        </Tab>
         <ShellContent
-            Title="Tab1" Icon="icon1.png"
-            ContentTemplate="{DataTemplate views:Page1}"
-            Route="Tab1" />
-        <ShellContent 
-                Title="Tab2" Icon="icon2.png"
-                ContentTemplate="{DataTemplate views:Page2}"
-                Route="Tab2" />
-    </FlyoutItem>
-    <FlyoutItem FlyoutDisplayOptions="AsSingleItem" Route="tabs" Title="Tabs 3,4">
+          Title="Monkeys" Icon="monkey.png"
+          ContentTemplate="{DataTemplate views:Monkeys}"
+          Route="Tab3" />
         <ShellContent
-                Title="Tab3" Icon="icon3.png"
-                ContentTemplate="{DataTemplate views:Page3}"
-                Route="Tab3" />
+          Title="Elephants" Icon="elephant.png"
+          ContentTemplate="{DataTemplate views:Elephants}"
+          Route="Tab4" />
         <ShellContent
-            Title="Tab4" Icon="icon4.png"
-            ContentTemplate="{DataTemplate views:Page4}"
-            Route="Tab4" />
+          Title="Bears" Icon="bear.png"
+          ContentTemplate="{DataTemplate views:Bears}"
+          Route="Tab4" />
     </FlyoutItem>
     <MenuItem
         Command="{Binding InfoCommand}"
-        IconImageSource="info.png"
-        Text="About" />
+        IconImageSource="help.png"
+        Text="Help" />
 
 
     <!-- Flyout item with multiple tabs-->

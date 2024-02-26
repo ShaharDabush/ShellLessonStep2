@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ShellLessonStep2.Views.Page3"
-             Title="Page3">
+             x:Class="ShellLessonStep2.Views.Bears"
+             Title="Bears">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to Page 3"
+            Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Button Text="Click to open Modal!" Clicked="Button_Clicked"></Button>
     </VerticalStackLayout>
 </ContentPage>
