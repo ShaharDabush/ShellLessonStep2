@@ -16,11 +16,12 @@ public partial class AppShell : Shell
 	private void RegisterRoutings()
 	{
 		Routing.RegisterRoute("modalPage", typeof(ModalPage));
-	}
+        Routing.RegisterRoute("Details", typeof(AnimalDetailsView));
+    }
 
     public ICommand InfoCommand { get; set; }
 	private void OnInfoClicked()
 	{
-		DisplayAlert("Info", "This is a demo for using Shell!", "Ok");
+		DisplayAlert("Help", "There is no help sorry!", "Ok");
 	}
 }

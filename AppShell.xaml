@@ -4,12 +4,15 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:ShellLessonStep2.Views"
-    Shell.FlyoutBehavior="Flyout">
+    Shell.FlyoutBehavior="Flyout"
+    FlyoutBackgroundImage="yato.png"
+    FlyoutBackgroundImageAspect="AspectFill"
+    >
 
 
     <!-- More than one Flyout item with multiple tabs-->
-    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Route="tabs" Title="Domestic">
-        <Tab Title="Domestic" Icon="icon2.png" Route="Domestic">
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Route="tabs" Title="Domestic" >
+        <Tab Title="Domestic" Icon="paw.png" Route="Domestic">
             <ShellContent
          Title="Cats" Icon="cat.png"
          ContentTemplate="{DataTemplate views:Cats}"
@@ -38,6 +41,7 @@
         Text="Help" />
 
 
+    
     <!-- Flyout item with multiple tabs-->
     <!--<FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Route="tabs">
         <ShellContent

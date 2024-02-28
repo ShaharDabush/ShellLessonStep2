@@ -62,6 +62,7 @@
 	  <None Remove="Resources\Images\photo.jpg" />
 	  <None Remove="Resources\Images\random.png" />
 	  <None Remove="Resources\Images\xamarinstore.jpg" />
+	  <None Remove="Resources\Images\yato.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -70,10 +71,12 @@
 
 	<ItemGroup>
 	  <Folder Include="Docs\" />
-	  <Folder Include="ViewModels\" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\AnimalDetailsView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Bears.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
